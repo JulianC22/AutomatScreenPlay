@@ -18,6 +18,8 @@ public class MyStepdefs {
     public void startStage(){
         OnStage.setTheStage(new OnlineCast());
     }
+
+    //1st Step Definition - Log In -----------------------------------------------------------
     @Given("^that Catalina enters the XYZ app$")
     public void thatCatalinaEntersTheXYZApp() {
         OnStage.theActorCalled("Catalina").wasAbleTo(OpenPagi.urlApp());
@@ -34,5 +36,44 @@ public class MyStepdefs {
     public void verifyThatSheWasAbleToLogInCorrectly() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(
                 Verify.result(), Matchers.equalTo("MENU") ));
+    }
+
+    //2nd Step Definition - The Expensive ----------------------------------------------------
+    @Given("^that Catalina want to buy the most expensive subscription$")
+    public void thatCatalinaWantToBuyTheMostExpensiveSubscription() {
+    }
+
+    @When("^she enters in Pricing Table menu to select her expensive purchase$")
+    public void sheEntersInPricingTableMenuToSelectHerExpensivePurchase() {
+    }
+
+    @Then("^she selects Ultra Subscription$")
+    public void sheSelectsUltraSubscription() {
+    }
+
+    // 3rd Step Definition - The Cheapest ---------------------------------------------------
+    @Given("^that Catalina want to buy the cheapest subscription$")
+    public void thatCatalinaWantToBuyTheCheapestSubscription() {
+    }
+
+    @When("^she enters in Pricing Table menu to select her cheapest purchase$")
+    public void sheEntersInPricingTableMenuToSelectHerCheapestPurchase() {
+    }
+
+    @Then("^she selects Starter Subscription$")
+    public void sheSelectsStarterSubscription() {
+    }
+
+    //4th Step Definition - Fill the Form --------------------------------------------------
+    @Given("^that Catalina must to Fill her personal data in a form$")
+    public void thatCatalinaMustToFillHerPersonalDataInAForm() {
+    }
+
+    @When("^she enters her personal data in the form$")
+    public void sheEntersHerPersonalDataInTheForm() {
+    }
+
+    @Then("^she gives click in minimize button$")
+    public void sheGivesClickInMinimizeButton() {
     }
 }
