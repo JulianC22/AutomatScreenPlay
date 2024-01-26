@@ -1,5 +1,6 @@
-#Autor: Julián Andrés Cuéllar Tovar
-#language: en
+#Author: Julian Andres Cuellar Tovar
+#Date: 28/04/2023
+#Language: en
 
   @UserStory1
   Feature: Verify correct login into the app XYZ
@@ -22,6 +23,7 @@
 
     @TheCheapest
     Scenario: Select the cheapest subscription from a pricing table
+      #/Components/PricingTable/SelectTheCheapestSubscription
       Given that Catalina want to buy the cheapest subscription
       When she enters in Pricing Table menu to select her cheapest purchase
       Then she selects Starter Subscription

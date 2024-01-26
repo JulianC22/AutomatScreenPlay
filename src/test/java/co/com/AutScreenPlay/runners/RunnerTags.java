@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions
         (features = "src/test/resources/features/prueba.feature",
-        tags = "@Meeting",
+        tags = "@UserStory1",
         glue ="co.com.AutScreenPlay.stepdefinitions",
         snippets = SnippetType.CAMELCASE )
 
@@ -16,6 +16,6 @@ public class RunnerTags {
 
 
 /* Report generated:
- Terminal> gradle clean test aggregate -Dtags=@Meeting
+ Terminal> gradle clean test aggregate -Dtags=@UserStory1
  Open> target/site/serenity/index.html
  */

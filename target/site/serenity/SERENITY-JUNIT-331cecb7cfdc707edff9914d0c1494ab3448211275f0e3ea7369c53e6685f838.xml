@@ -1,1 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Verify correct login into the app XYZ" skipped="1" tests="2" time="34.19" timestamp="2023-04-26 07:36:24"><testcase name="Verify correct login"/><testcase name="Create a new event on calendar"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Verify correct login into the app XYZ" skipped="0" tests="4" time="9.11" timestamp="2024-01-26 11:21:32"><testcase name="Verify correct login"/><testcase name="Select the most expensive subscription from a pricing table"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+co.com.AutScreenPlay.stepdefinitions.MyStepdefs.thatCatalinaWantToBuyTheMostExpensiveSubscription(MyStepdefs.java:45)&#13;
+✽.that Catalina want to buy the most expensive subscription(src/test/resources/features/prueba.feature:20)&#13;
+</system-err></testcase><testcase name="Select the cheapest subscription from a pricing table"/><testcase name="Fill the Masket Inputs Form"/></testsuite>

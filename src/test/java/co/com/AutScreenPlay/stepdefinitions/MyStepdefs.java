@@ -1,6 +1,7 @@
 package co.com.AutScreenPlay.stepdefinitions;
 
 import co.com.AutScreenPlay.questions.Verify;
+import co.com.AutScreenPlay.tasks.ExpensivePurch;
 import co.com.AutScreenPlay.tasks.LogIn;
 import co.com.AutScreenPlay.tasks.OpenPagi;
 import cucumber.api.DataTable;
@@ -41,6 +42,7 @@ public class MyStepdefs {
     //2nd Step Definition - The Expensive ----------------------------------------------------
     @Given("^that Catalina want to buy the most expensive subscription$")
     public void thatCatalinaWantToBuyTheMostExpensiveSubscription() {
+        OnStage.theActorCalled("Catalina").wasAbleTo(ExpensivePurch.urlApp());
     }
 
     @When("^she enters in Pricing Table menu to select her expensive purchase$")

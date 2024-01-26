@@ -49,11 +49,11 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 1],
-                ['Pending', 1],
+                ['Passing', 3],
+                ['Pending', 0],
                 ['Ignored', 0],
                 ['Failing', 0],
-                ['Errors',  0],
+                ['Errors',  1],
                 ['Compromised',  0],
                 ['Untested',  0],
             ]
@@ -82,11 +82,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '1 requirements tested successfully'},
-                {label: '1 requirements pending'},
+                {label: '3 requirements tested successfully'},
+                {label: '0 requirements pending'},
                 {label: '0} requirements skipped'},
                 {label: '0} requirements with failures'},
-                {label: '0} requirements with errors'},
+                {label: '1} requirements with errors'},
                 {label: '0} requirements compromised'},
                 {label: '0} requirements untested'},
             ]
@@ -177,7 +177,7 @@
             <a href="#"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-04-2023 19:36</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-01-2024 11:21</span>
     <br style="clear:left"/>
 </div>
 
@@ -211,10 +211,10 @@
                                 <tr>
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria
                                         (tests)</a></td>
-                                    <td>2</td>
+                                    <td>4</td>
+                                    <td>3</td>
                                     <td>1</td>
                                     <td>0</td>
-                                    <td>1</td>
                                     <td>0</td>
                                     <td></td>
                                 </tr>
@@ -242,10 +242,10 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>2</td>
-            <td>1 (50%)</td>
+            <td>4</td>
+            <td>3 (75%)</td>
+            <td>1 (25%)</td>
             <td>0 (0%)</td>
-            <td>1 (50%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
@@ -258,15 +258,15 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>2</td>
-            <td>1 (50%)</td>
+            <td>4</td>
+            <td>3 (75%)</td>
+            <td>1 (25%)</td>
             <td>0 (0%)</td>
-            <td>1 (50%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">34 seconds</td>
+                <td colspan="5">9 seconds</td>
         </tr>
         </body>
     </table>
@@ -312,32 +312,78 @@
                                 <td class="SUCCESS-text">8</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2023-04-26 19:36:24">19:36:24</td>
+                                <td class="SUCCESS-text" data-sort="2024-01-26 11:21:32">11:21:32</td>
 
-                                <td class="SUCCESS-text">34.18</td>
+                                <td class="SUCCESS-text">8.98</td>
                             </tr>
 
-                            <tr class="test-PENDING">
-                                <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">PENDING</span></td>
-                                <td class="PENDING-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
-                                        <a href="3c37f3869ae2bb4764b440938c3702901f28cfdd68e7709fc71ffbc1e4eb0e68.html" class="ellipsis"
-                                           title="Create a new event on calendar ">
-                                            Create a new event on calendar
+                                        <a href="d9d17cb6ae0169ba872d7dfb53c152a1986fc83c15e494f83ca9e8f7cf503c38.html" class="ellipsis"
+                                           title="Select the most expensive subscription from a pricing table Null pointer exception">
+                                            Select the most expensive subscription from a pricing table
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="PENDING-text">3</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="PENDING-text" data-sort="2023-04-26 19:36:58">19:36:58</td>
+                                <td class="ERROR-text" data-sort="2024-01-26 11:21:41">11:21:41</td>
 
-                                <td class="PENDING-text">0.01</td>
+                                <td class="ERROR-text">0.12</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="696a4a2ed6a34fde8e1fb5d61ac3d473d459a4c4b3ba3dc106a612b056decb1c.html" class="ellipsis"
+                                           title="Select the cheapest subscription from a pricing table ">
+                                            Select the cheapest subscription from a pricing table
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="SUCCESS-text">3</td>
+
+
+                                <td class="SUCCESS-text" data-sort="2024-01-26 11:21:41">11:21:41</td>
+
+                                <td class="SUCCESS-text">0.01</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="db0e85684d7d8ecb0b3850260bc2ebc16eebaf9ead335395e30442e82026aa30.html" class="ellipsis"
+                                           title="Fill the Masket Inputs Form ">
+                                            Fill the Masket Inputs Form
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="SUCCESS-text">3</td>
+
+
+                                <td class="SUCCESS-text" data-sort="2024-01-26 11:21:41">11:21:41</td>
+
+                                <td class="SUCCESS-text">0.01</td>
                             </tr>
                         </tbody>
                     </table>
